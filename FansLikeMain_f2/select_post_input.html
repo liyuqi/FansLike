@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta name="generator" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="ajax_phpPostinput.js"></script>
+    <title></title>
+  </head>
+  <body>
+  
+<div>
+    <h1>FansLike
+     <a href="select_keyuser.html"><button class="btn btn-large btn-primary">關鍵粉絲</button></a>
+	 <!--
+	 <a href="select_keyuserComment.html"><button class="btn btn-large btn-primary">留言粉絲</button></a>
+	 -->
+	 <a href="select_post_input.html"><button class="btn btn-large btn-primary">貼文推薦</button></a></h1>
+	</div>
+	
+	<!--
+    <form action="" style="margin-top:15px;">
+	  <label>Post:</label> 
+	  <select id="article" name="article" onchange="showArticle(this.value)">
+        <option value="">Post:</option>
+      </select>
+	  
+	  <div></div>
+	</form>
+	-->
+	<input type="text" id="article" name="article"/>
+	<button type="button" onClick="showArticle(article.value)">查詢</button>
+    <br />
+    <div id="txtHint">info</div>
+	
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+	<script type="text/javascript">
+		google.load("visualization", "1", {packages:["corechart"]});
+		google.setOnLoadCallback(drawChart);
+	</script>
+	
+	<div id="chart_div2"></div>
+  </body>
+</html>

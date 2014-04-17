@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta name="generator" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="ajax_phpComment.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div>
+    <h1>FansLike
+     <a href="select_keyuser.html"><button class="btn btn-large btn-primary">關鍵粉絲</button></a>
+	 <a href="select_keyuserComment.html"><button class="btn btn-large btn-primary">留言粉絲</button></a>
+	 <a href="select_post_input.html"><button class="btn btn-large btn-primary">貼文推薦</button></a></h1>
+	</div>
+    <form action="" style="margin-top:15px;">
+	  <label>Rank:</label> 
+	  <select id="rank" name="keyUser" onchange="showKeyUser2(this.value)">
+        <option value="">Rank:</option>
+      </select>
+	  <div id="rank2" name="keyUser" onchange="drawChart()"/>
+	  <div></div>
+	</form>
+	
+	
+    <br />
+    <div id="txtHint">info</div>
+	
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+		google.load("visualization", "1", {packages:["corechart"]});
+    </script>
+	
+	<p></p>
+
+	<table id='chart' style='border:none;'>
+	<tr>
+		<th>Ratio</th>
+		<th>History</th>
+	</tr>
+	<tr>
+		<td id='chart_like_ratio'></td>
+		<td id='chart_like_history'></td>
+	</tr>
+	<tr>
+		<td id='chart_comment_ratio'></td>
+		<td id='chart_comment_history'></td>
+	</tr>
+	</table>
+	
+<!--
+	<div class="div-inline .div-l" id="chart_like_ratio"></div>
+	<div class="div-inline .div-r" id="chart_like_history"></div>
+	<div class="div-inline .div-l" id="chart_comment_ratio"></div>
+	<div class="div-inline .div-r" id="chart_comment_history"></div>
+	-->
+  </body>
+</html>
