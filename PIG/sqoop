@@ -1,0 +1,7 @@
+sqoop export --connect "jdbc:mysql://140.115.236.110/db3?useUnicode=true&characterEncoding=utf-8" --username test --password 1234 --table table_keyuser --export-dir Final_Project/FD01_User_Rank/Dynamic/user_rank --input-fields-terminated-by ',' -- --default-character-set=utf-8
+
+
+-----------------------------------
+mysql -h 140.115.236.110 -u test -p 1234
+
+USE 'db3';DELETE FROM `table_keyuser` WHERE 1;
